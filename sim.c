@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <sim.h>
 
-#define IX(i,j) ((i)+(7)*(j))
+
 
 
 int main(){
