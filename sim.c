@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include <sim.h>
-
+#include <E:\projects\sim\sim.h>
+#define size 49
 int main(){
-    //N+2 = 7 => N=5
-    static size = 49;
+
     //what are these statics? 
     //shouldn't "static" just limit the scope of the variable?
 
@@ -17,9 +16,24 @@ int main(){
 
     // Also, I'm surprised C lets you get away without specifying the data type of these variables.  Does this compile?
 
-    static float u[size], u_prev[size], v_prev[size];
-    static float dens[size];
-    u = u[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+    static float u[size], u_prev[size], v[size], v_prev[size];
+    static float dens[size], dens_prev[size];
+    float dt = .05;
+    float diff = 0.1;
+    float visc = 0;
+    float force = 1;
+    float source = 10;
+    memset(u_prev,-0.1,49);
+    memset(u,0,49);
+    memset(v_prev,1,49);
+    memset(v,0.1,49);
+    memset(dens_prev,1.1,49);
+    memset(dens,1,49);
+
+    vel_step(5,u,v,u_prev,v_prev,visc,dt);
+    for(int i=0;i<=49;i++){
+        printf("%f, ",u[i]);
+    }
     int x = 1;
     return x;
 }
