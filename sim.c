@@ -23,12 +23,12 @@ int main(){
     float visc = 0;
     float force = 1;
     float source = 10;
-    memset(u_prev,-0.1,49);
+    memset(u_prev,0,49);
     memset(u,0,49);
-    memset(v_prev,1,49);
-    memset(v,0.1,49);
-    memset(dens_prev,1.1,49);
-    memset(dens,1,49);
+    memset(v_prev,0,49);
+    memset(v,0,49);
+    memset(dens_prev,0,49);
+    memset(dens,0,49);
 
     vel_step(5,u,v,u_prev,v_prev,visc,dt);
     for(int i=0;i<=49;i++){
