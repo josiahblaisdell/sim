@@ -1,10 +1,4 @@
-a.exe
-hello.exe
-hello.ilk
-hello.pdb
-sim.exe
-sim.ilk
-sim.obj
-sim.pdb
-vc140.pdb
-Sim/Sim.opensdf
+x64/
+multi_array/
+.vs/
+multi_array.hpp
