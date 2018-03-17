@@ -10,17 +10,13 @@ Run visual studio, build the project.
 
 You will need C++/CLR set up in visual studio 2017. You will need all the windows forms set up for c++ development.
 
-## Contributing
-
-https://github.com/TimBlaisdell
-
 ## Versioning
 
 Version 1.0!
 
 ## Authors
 
-* **Josiah Blaisdell** - *Initial work* - [JosiahBlaisdell](https://github.com/josiahblaisdell)
+* **Josiah Blaisdell** - *Author/Coder* - [JosiahBlaisdell](https://github.com/josiahblaisdell)
 
 ## License
 
@@ -28,5 +24,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Thanks to my dad Timothy Blaisdell for setting everything up in C#/helping me move it to C++.
+* Thanks to my dad Timothy Blaisdell for helping with debugging, coding, understanding various concepts, and much more https://github.com/TimBlaisdell .
 * This was part of my application to Oregon State University.
